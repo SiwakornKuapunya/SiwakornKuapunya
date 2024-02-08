@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public enum UnitState
-{
-    Idle,
-    Move,
-    Attack,
-    Die
-}
- 
+
 public class Unit : MonoBehaviour
 {
+    public enum UnitState
+    {
+        Idle,
+        Move,
+        Attack,
+        Die
+    }
     [SerializeField] private int id;
     public int ID { get { return id; } set { id = value; } }
 

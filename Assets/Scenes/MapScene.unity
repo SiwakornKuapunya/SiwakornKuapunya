@@ -241,9 +241,9 @@ GameObject:
   - component: {fileID: 607613578}
   - component: {fileID: 607613577}
   - component: {fileID: 607613576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundPlane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -441,10 +441,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soilder
       objectReference: {fileID: 0}
-    - target: {fileID: 186328, guid: d24bb65e9cbd4f34d8d7c86cdec254e1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 427352, guid: d24bb65e9cbd4f34d8d7c86cdec254e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3318143
@@ -485,10 +481,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6205239397220481747, guid: d24bb65e9cbd4f34d8d7c86cdec254e1, type: 3}
-    m_RemovedGameObjects:
-    - {fileID: 5791454047800502748, guid: d24bb65e9cbd4f34d8d7c86cdec254e1, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24bb65e9cbd4f34d8d7c86cdec254e1, type: 3}
@@ -795,6 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3822a50052c6f694b9bdc38a15a86bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectionMarker: {fileID: 2976155855138921072, guid: 628a54727f83fc6469fc6362812fde14, type: 3}
 --- !u!1001 &1480714052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1274,6 +1269,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1217658646427099051, guid: b9e910fcf4420674384a93551c846110, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1891016459}
+    - targetCorrespondingSourceObject: {fileID: 1217658646427099051, guid: b9e910fcf4420674384a93551c846110, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1891016461}
   m_SourcePrefab: {fileID: 100100000, guid: b9e910fcf4420674384a93551c846110, type: 3}
 --- !u!4 &1891016457 stripped
 Transform:
@@ -1296,6 +1294,21 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   curUnit: {fileID: 0}
+--- !u!114 &1891016461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826112278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2371e5682604545ab564e99439677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1902043996
 GameObject:
   m_ObjectHideFlags: 0
